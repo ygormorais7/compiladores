@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Funções importadas
+char *readFile(const char *filename);
+char *readStr();
+
+int lexer(char* programa);
+
 int main(){
+
     char resposta;
-    char *lerArquivo(const char *filename);
-    char *lerNome();
 
     printf("Deseja ler um arquivo ou digitar um texto?\n"
             "1 - Ler um arquivo\n"
@@ -15,14 +20,17 @@ int main(){
 
     switch(resposta){
         case '1':
-            char *nomeArqv = lerNome();
-            char *conteudo = lerArquivo(nomeArqv);
+            char *nomeArqv = readStr();
+            char *conteudo = readFile(nomeArqv);
             printf("-----Resultado-----\n"
-            "Conteúdo do arquivo: %s\n", conteudo);
+            "Conteúdo do arquivo:\n%s\n------\n", conteudo);
+
+            lexer(conteudo);
+
             break;
 
         case '2':
-            char *texto = lerNome();
+            char *texto = readStr();
             printf("-----Resultado-----\n"
                 "Texto digitado: %s\n", texto);
             break;
