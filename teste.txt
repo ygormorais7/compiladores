@@ -1,0 +1,4 @@
+dinheiro = 11
+resultado = 12
+result = dinheiro <= resultado 
+imprime(dinheiro)
