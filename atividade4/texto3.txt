@@ -1,0 +1,2 @@
+resultado = 1 + 1
+imprime(resultado)

@@ -1,0 +1,16 @@
+Para rodar o código:
+1- gcc main.c funcoes.c lexer.c
+2- ./a.out
+
+Para rodar o parser:
+1- gcc parser.c -o parser.out
+2- ./parser.out
+
+O código começou a apresentar muitos erros após uma tentativa de integrar
+com o parser.c
+O parser.c cumpre o que deve fazer, ele consegue executar os códigos a partir
+dos tokens.
+Infelizmente, não consegui adaptar o código para que o lexer formatasse da
+forma como o parser precisa. E me perdi nas modificações.
+O lexer também cumpria com o que era pedido, lia um arquivo txt ou uma string
+do terminal e retornava os tokens.

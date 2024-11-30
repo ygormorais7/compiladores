@@ -1,0 +1,12 @@
+inteiro a;
+inteiro b;
+inteiro c;
+inteiro d;
+logico x;
+
+a = b + -c;
+d=c-b;
+x = a == b;
+x = 1<3;
+
+imprime(x);

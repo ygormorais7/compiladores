@@ -1,0 +1,6 @@
+logico a;
+logico b;
+logico c;
+logico d;
+logico x;
+x = (a == b) and (c == d);

@@ -1,0 +1,4 @@
+felicidade = 5
+tristeza = 3
+result = felicidade - tristeza
+imprime(result)

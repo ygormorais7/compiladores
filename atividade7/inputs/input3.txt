@@ -1,0 +1,24 @@
+inteiro dinheiro;
+inteiro realizacao;
+inteiro cansaco;
+inteiro felicidade;
+inteiro tristeza;
+logico resultado2;
+logico resultado;
+
+dinheiro = 1;
+realizacao = 2;
+cansaco = 1;
+resultado = falso;
+resultado2 = verdadeiro;
+
+felicidade = 2*(dinheiro + realizacao) ;
+tristeza = dinheiro + cansaco - realizacao;
+
+imprime(felicidade);
+
+imprime(tristeza);
+
+resultado = felicidade == tristeza;
+
+imprime(resultado);

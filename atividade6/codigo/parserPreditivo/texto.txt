@@ -1,0 +1,10 @@
+dinheiro = 1
+realizacao = 2
+cansaco = 1
+resultado = falso
+felicidade = 2*(dinheiro + realizacao)
+tristeza = dinheiro + cansaco - realizacao
+imprime(felicidade)
+imprime(tristeza)
+resultado = felicidade == tristeza
+imprime(resultado)

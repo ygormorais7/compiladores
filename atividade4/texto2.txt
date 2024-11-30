@@ -1,0 +1,4 @@
+resultado = 1
+resultado2 = 2
+r3 = resultado + resultado2
+imprime(r3)

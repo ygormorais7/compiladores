@@ -1,0 +1,21 @@
+<program>        → <decl_list> <stmt_list>
+
+<decl_list>      → <decl> \n <decl_list> | ε
+<decl>           → <type> id
+<type>           → inteiro | logico
+
+<stmt_list>      → <stmt> \n <stmt_list> | ε
+<stmt>           → id <stmt2> | <print_stmt>
+<stmt2>          → = <exp> | ε
+<print_stmt>     → imprime ( <exp> )
+
+<exp>            → <operator> <rel>
+<operator>       → <term> <exp2>
+<exp2>           → + <term> <exp2> | - <term> <exp2> | ε
+
+<term>           → <factor> <term2>
+<term2>          → * <factor> <term2> | / <factor> <term2> | ε
+<factor>         → ( <exp> ) | id | num | verdadeiro | falso
+
+<rel>            → <rel_op> <operator> <rel> | ε
+<rel_op>         → > | < | >= | <= | == | !=

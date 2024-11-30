@@ -1,0 +1,3 @@
+resu = 1;
+apt = 2
+imprime(resu + apt)

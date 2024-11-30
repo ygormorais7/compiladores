@@ -1,0 +1,15 @@
+inteiro dinheiro
+inteiro realizacao
+inteiro cansaco
+inteiro felicidade
+inteiro tristeza
+logico resultado
+dinheiro = 1
+realizacao = 2
+cansaco = verdadeiro
+resultado = falso
+felicidade = 2*(dinheiro + realizacao) 
+tristeza = dinheiro + cansaco - realizacao
+resultado = felicidade == tristeza
+resultado
+imprime(resultado)
